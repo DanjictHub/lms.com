@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test Page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<style type="text/css">
+		.myAcademic {
+			border: 2px outset white;
+			background-color: white;
+			text-align: left;
+			padding: 10px;
+		}
+
+		.academic1 {
+			background-color: darkseagreen;
+			width: 500px;
+			clear: both;
+		}
+
+		.academic1 {
+			width: 100%;
+			clear: both;
+		}
+
+		.footer {
+			border: 0px outset lightseagreen;
+			text-align: center;
+			text-decoration-color: green;
+			background-color: white;
+			width: 1500px;
+		}
+
+		input[type=text],
+		select {
+			width: 100%;
+			padding: 12px 20px;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		input[type=submit] {
+			width: 100%;
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 15px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+
+		div {
+			border-radius: 5px;
+			background-color: darkseagreen;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+
+<div style="color: darkseagreen;" >
+	<span style="color: darkseagreen;">
+		<div>
+			<center>
+				<label style="color: whitesmoke;"> Welcome to AFIIC Admission Portal</label>
+			</center>
+		</div>
+	</span>
+
+	<span style="color: darkseagreen;">
+		<div>
+			<left>
+				<label style="color: whitesmoke;">AFIIC Admission Portal</label>
+			</left>
+		</div>
+	</span>
+</div>
+
+<center>
+	<h1 style="padding: 2px; color: darkgreen;">AFIIC ADMISSION FORM</h1><br>
+</center>
+
+<img src="afiic.jpeg" width="1500" height="400" alt="image">
+
+<!-- Academic Form -->
+<form action="Academicpage.html">
+	<div class="myParent">
+		<center>
+			<h2 style="color: darkgreen;" text-alignment: right; ><b>SECTION A</b></h2>
+		</center>
+		<h4>CANDIDATE'S DETAILS</h4>
+		<br>
+	</div>
+
+	<div class="parent1">
+		<div class="row">
+			<div class="col-md-6">
+				<label for="fatherName"><b>First Name</b></label><br>
+				<input type="text" id="fName" name="fName" class="form-control">
+				<label for="fatherName"><b>Surname</b></label><br>
+				<input type="text" id="SName" name="SName" class="form-control">
+				<br>
+				<label for="Mname"><b>Middle Name</b></label><br>
+				<input type="text" id="Mname" name="Mname" class="form-control">
+				<br>
+				<label for="textarea"><b>Gender</b></label><br>
+				<input type="radio" name="gender" id="male" value="Male">
+				<label for="male">Male</label>
+				<input type="radio" name="gender" id="female" value="Female">
+				<label for="female">Female</label>
+				<br>
+				<label for="DOB"><b>Date of Birth</b></label><br>
+				<input type="date" id="date" name="DOB" class="form-control">
+				<br>
+				<label for="placeOfBirth"><b>Place of Birth</b></label><br>
+				<input type="text" id="placeOfBirth" name="placeOfBirth" class="form-control">
+				<br>
+				<label for="StateOfBirth"><b>State of Origin</b></label><br>
+				<input type="text" id="StateOfBirth" name="StateOfOrigin" class="form-control">
+				<br>
+				<label for="residentialAddress"><b>Residential Address</b></label><br>
+				<textarea id="residentialAddress" name="residentialAddress" rows="2" cols="15" class="form-control"></textarea>
+				<br>
+				<label for="NameofB/S"><b>Name of Brother/Sister in the School</b></label><br>
+				<textarea id="NameofB/S" name="NameofB/S" rows="2" cols="15" class="form-control"></textarea>
+				<br>
+			</div>
+			<div class="col-md-6">
+				<label for="residentialAddressMother"><b>Residential Address</b></label><br>
+				<textarea id="residentialAddressMother" name="residentialAddressMother" rows="2" cols="15" class="form-control"></textarea>
+				<br>
+				<br>
+				<label for="Nationality"><b>Nationality</b></label><br>
+				<select id="Nationality" name="Nationality" class="form-control">
+					<option value="Nigerian">Nigerian</option>
+					<option value="NonNigerian">Non Nigerian</option>
+				</select>
+				<br>
+				<br>
+				<label for="ResidentialArea"><b>Residential Area</b></label><br>
+				<textarea id="ResidentialArea" name="ResidentialArea" rows="2" cols="15" class="form-control"></textarea>
+				<br>
+				<br>
+				<label for="siblings"><b>Name of sister/brother currently in the school</b></label><br>
+				<input type="text" id="siblings" name="siblings" class="form-control">
+				<br>
+				<br>
+				<label for="languagesSpoken"><b>Language(s) commonly Spoken at home</b></label><br>
+				<input type="text" id="languagesSpoken" name="languagesSpoken" class="form-control">
+				<br>
+				<br>
+				<label for="medicalIssue"><b>Medical Issue (if any)</b></label><br>
+				<input type="radio" id="medicalIssueYes" name="medicalIssue" value="Yes">
+				<label for="medicalIssueYes">Yes</label>
+				<input type="radio" id="medicalIssueNo" name="medicalIssue" value="No">
+				<label for="medicalIssueNo">No</label>
+				<br>
+				<br>
+				<label for="physicalChallenge"><b>Physical Challenge (if any)</b></label><br>
+				<input type="radio" id="physicalChallengeYes" name="physicalChallenge" value="Yes">
+				<label for="physicalChallengeYes">Yes</label>
+				<input type="radio" id="physicalChallengeNo" name="physicalChallenge" value="No">
+				<label for="physicalChallengeNo">No</label>
+				<br>
+				<br>
+				<label for="psychologicalChallenge"><b>Psychological Challenge (if any)</b></label><br>
+				<input type="radio" id="psychologicalChallengeYes" name="psychologicalChallenge" value="Yes">
+				<label for="psychologicalChallengeYes">Yes</label>
+				<input type="radio" id="psychologicalChallengeNo" name="psychologicalChallenge" value="No">
+				<label for="psychologicalChallengeNo">No</label>
+				<br>
+				<br>
+			</div>
+		</div>
+
+		<!-- File Upload -->
+		<div>
+			<p><b>Kindly Upload the following Documents for the Pupil</b></p>
+			<label for="passport"><b>Upload Passport</b></label>
+			<p>Note: The passport should be of White Background and should not exceed 200kb size</p>
+			<input type="file" id="passport" name="passport" accept="image/png,image/jpg,image/jpeg" class="form-control" onchange="previewImage('passport', 'passportPreview')">
+			<br>
+			<img id="passportPreview" src="" alt="Passport Preview" style="max-width: 200px; max-height: 200px;">
+			<br>
+			<label for="previousResult"><b>Previous School Result</b></label><br>
+			<input type="file" id="previousResult" name="previousResult" accept="image/png,image/jpeg" class="form-control" onchange="previewImage('previousResult', 'previousResultPreview')">
+			<br>
+			<img id="previousResultPreview" src="" alt="Previous Result Preview" style="max-width: 200px; max-height: 200px;">
+			<br>
+			<label for="birthCertificate"><b>Birth Certificate</b></label><br>
+			<input type="file" id="birthCertificate" name="birthCertificate" accept="image/png,image/jpg,image/jpeg" class="form-control" onchange="previewImage('birthCertificate', 'birthCertificatePreview')">
+			<br>
+			<img id="birthCertificatePreview" src="" alt="Birth Certificate Preview" style="max-width: 200px; max-height: 200px;">
+			<br>
+			<label for="medicalCertificate"><b>Medical Certificate</b></label><br>
+			<input type="file" id="medicalCertificate" name="medicalCertificate" accept="image/jpg,image/png,image/jpeg" class="form-control" onchange="previewImage('medicalCertificate', 'medicalCertificatePreview')">
+			<br>
+			<img id="medicalCertificatePreview" src="" alt="Medical Certificate Preview" style="max-width: 200px; max-height: 200px;">
+			<br>
+			 <button type="submit" class="btn btn-primary">Next</button>
+<br>
+			<button onclick="window.print()" class="btn btn-primary">Print this page</button>
+		</div>
+	</div>
+</form>
+
+<!-- Footer Part -->
+<div class="footer">
+	<footer>
+		<p>&copy; 2023 AFIIC. Powered by IPPLUS Nigeria Limited</p>
+		<p>Contact us: <a href="mailto:afiic.info.ng">Email Us</a></p>
+	</footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+	function previewImage(inputId, previewId) {
+		const input = document.getElementById(inputId);
+		const preview = document.getElementById(previewId);
+
+		if (input.files && input.files[0]) {
+			const reader = new FileReader();
+
+			reader.onload = function (e) {
+				preview.src = e.target.result;
+			}
+
+			reader.readAsDataURL(input.files[0]);
+		} else {
+			preview.src = "";
+		}
+	}
+</script>
+</body>
+</html>

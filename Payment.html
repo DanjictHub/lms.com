@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> AFIIC Admission Payment</title>
+  <style type="text/css">
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #053D22; /* Set the background color to #053D22 */
+      color: #fff; /* Set the text color to white */
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    #paymentForm {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff; /* Set the background color to white */
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #paymentResult {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff; /* Set the background color to white */
+    }
+
+    /* Add more custom styles here if needed */
+  </style>
+</head>
+<body>
+  <h1>AFIIC Admission Payment</h1>
+  <form action="">
+    
+
+   <div id="paymentForm">
+    <label for="cardNumber">Card Number:</label>
+    <input type="text" id="cardNumber" placeholder="Card Number">
+    <label for="expiryDate">Expiry Date:</label>
+    <input type="text" id="expiryDate" placeholder="MM/YY">
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" placeholder="CVV">
+    <button onclick="processPayment()">Pay Now</button>
+  </div>
+  <div id="paymentResult"></div>
+
+ <button type="button" onclick="window.location.href='Academicpage.html'" class="btn btn-primary"></button>
+
+  </form>
+  <script src="payment.js"></script>
+
+  <script type="text/javascript">
+    function processPayment() {
+      const cardNumber = document.getElementById('cardNumber').value;
+      const expiryDate = document.getElementById('expiryDate').value;
+      const cvv = document.getElementById('cvv').value;
+
+      // Implement your payment processing logic here
+      // For a real payment platform, this will involve integrating with a payment gateway or API
+      // For demonstration purposes, let's just display a success message
+
+      const paymentResultDiv = document.getElementById('paymentResult');
+      paymentResultDiv.innerHTML = '<p>Payment successful!</p>';
+    }
+  </script>
+</body>
+</html>

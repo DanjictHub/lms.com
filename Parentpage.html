@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test Page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<style type="text/css">
+		.myAcademic {
+			border: 2px outset white;
+			background-color: white;
+			text-align: left;
+		}
+
+		.academic1 {
+			background-color: darkseagreen;
+			width: 500px;
+			clear: both;
+		}
+
+		.academic1 {
+			width: 100%;
+			clear: both;
+		}
+
+		.footer {
+			border: 0px outset lightseagreen;
+			text-align: center;
+			text-decoration-color: green;
+			background-color: white;
+			width: 1500px;
+		}
+
+		input[type=text],
+		select {
+			width: 100%;
+			padding: 12px 20px;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		input[type=submit] {
+			width: 100%;
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 15px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+
+		.container {
+			border-radius: 5px;
+			background-color: darkseagreen;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+
+<div style="color: darkseagreen;">
+	<span style="color: darkseagreen;">
+		<div>
+			<center>
+				<label style="color: whitesmoke;">Welcome to AFIIC Admission Portal</label>
+			</center>
+		</div>
+	</span>
+
+	<!-- span styling-->
+	<span style="color: darkseagreen;">
+		<div>
+			<left>
+				<label style="color: whitesmoke;">AFIIC Admission Portal</label>
+			</left>
+		</div>
+	</span>
+</div>
+
+<center>
+	<h1 style="padding: 2px; color: darkgreen;">AFIIC ADMISSION FORM</h1><br>
+</center>
+<center>
+	<img src="afiic.jpeg" width="1500" height="400" alt="image">
+
+</center>
+
+<!-- Academic Form -->
+<div class="myAcademic">
+	<form action="payment.html">
+		<div class="container">
+			<center>
+				<h2 style="color: darkgreen;" text-align="right;"><b>SECTION C</b></h2>
+			</center>
+			<h4>PARENT'S DETAILS</h4>
+			<br>
+
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="fatherName"><b>Name of Father/Guardian</b></label>
+					<input type="text" id="fatherName" class="form-control">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="motherName"><b>Name of Mother</b></label>
+					<input type="text" id="motherName" class="form-control">
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="residentialAddressFather"><b>Residential Address (Father)</b></label>
+					<textarea rows="2" cols="15" class="form-control"></textarea>
+				</div>
+				<div class="form-group col-md-6">
+					<label for="residentialAddressMother"><b>Residential Address (Mother)</b></label>
+					<textarea rows="2" cols="15" class="form-control"></textarea>
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="officeAddressFather"><b>Office/Business Address (Father)</b></label>
+					<textarea rows="2" cols="15" class="form-control"></textarea>
+				</div>
+				<div class="form-group col-md-6">
+					<label for="officeAddressMother"><b>Office/Business Address (Mother)</b></label>
+					<textarea rows="2" cols="15" class="form-control"></textarea>
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="telephone1"><b>Telephone No 1 (Father)</b></label>
+					<input type="Telephone" id="telephone1" class="form-control">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="telephoneMother"><b>Telephone (Mother)</b></label>
+					<input type="tel" id="telephoneMother" class="form-control">
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="email"><b>Email Address (Father)</b></label>
+					<input type="tel" id="email" class="form-control">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="emailMother"><b>Email Address (Mother)</b></label>
+					<input type="email" id="emailMother" class="form-control">
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="passportFather"><b>Upload Passport (Father)</b></label>
+					<input type="file" id="passportFather" name="passportFather" accept="image/png,image/jpg,image/jpeg" class="form-control-file">
+					<small class="form-text text-muted">Note: The Passport should be of White Background and should not exceed 200kb in size.</small>
+				</div>
+				<div class="form-group col-md-6">
+					<label for="passportMother"><b>Upload Passport (Mother)</b></label>
+					<input type="file" id="passportMother" name="passportMother" accept="image/png,image/jpg,image/jpeg" class="form-control-file">
+					<small class="form-text text-muted">Note: The Passport should be of White Background and should not exceed 200kb in size.</small>
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="signatureFather"><b>Upload Signature (Father)</b></label>
+					<input type="file" id="signatureFather" name="signatureFather" accept="image/png,image/jpg,image/jpeg" class="form-control-file">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="signatureMother"><b>Upload Signature (Mother)</b></label>
+					<input type="file" id="signatureMother" name="signatureMother" accept="image/png,image/jpg,image/jpeg" class="form-control-file">
+				</div>
+			</div>
+ <button type="button" onclick="window.location.href='Academicpage.html'" class="btn btn-primary">Previous</button>
+ <button type="button" onclick="window.location.href='Payment.html'" class="btn btn-primary">Proceed to make Payment</button>
+ 
+
+			<a button type="button" href="parentpage.html" role="button" class="btn btn-primary"><b>Submit Application</b></a>
+			<button onclick="window.print()" class="btn btn-primary">Print this page</button>
+		</div>
+	</form>
+</div>
+<!-- Academic Form End -->
+
+<!-- Footer Part -->
+<div class="footer">
+	<footer>
+		<p>&copy; 2023 AFIIC. Powered by IPPLUS Nigeria Limited:</p>
+		<p>Contact us: <a href="afiic.info.ng"><u>Email US</u></a></p>
+	</footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

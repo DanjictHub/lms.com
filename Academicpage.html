@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test Page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<style type="text/css">
+		.myAcademic {
+			border: 5px outset white;
+			background-color: white;
+			text-align: left;
+			padding: 20px;
+		}
+
+		.academic1 {
+			background-color: darkseagreen;
+			clear: both;
+			padding: 20px;
+		}
+
+		.footer {
+			border: 0px outset lightseagreen;
+			text-align: center;
+			background-color: white;
+			padding: 20px;
+		}
+
+		input[type=text],
+		select {
+			width: 100%;
+			padding: 12px 20px;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		input[type=submit] {
+			width: 100%;
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+
+		div {
+			border-radius: 5px;
+			background-color: darkseagreen;
+			padding: 20px;
+		}
+
+		img {
+			width: 100%;
+			height: 300px;
+		}
+	</style>
+</head>
+<body>
+	<div style="color: darkseagreen;" >
+	<span style="color: darkseagreen;">
+		<div>
+			<center>
+				<label style="color: whitesmoke;"> Welcome to AFIIC Admission Portal</label>
+			</center>
+		</div>
+	</span>
+
+	<span style="color: darkseagreen;">
+		<div>
+			<left>
+				<label style="color: whitesmoke;">AFIIC Admission Portal</label>
+			</left>
+		</div>
+	</span>
+</div>
+	<center>
+		<h1>AFIIC ADMISSION FORM</h1><br>
+	</center>
+	<img src="afiic.jpeg" width="1000" height="400" alt="image">
+
+	<!-- Academic Form -->
+	<form action="Parentpage.html">
+		<div class="myCanditate">
+			<div class="myAcademic">
+				<h2><b>SECTION B</b></h2>
+				<h4>ACADEMIC DETAILS</h4>
+				<br>
+			</div>
+			<div class="academic1">
+				<label for="Class"><b>Class in which the admission is sought</b></label><br>
+				<select id="Class" class="form-control">
+					<option value="PSection">Primary Section</option>
+					<option value="JSection">Junior Section</option>
+					<option value="SSection">Senior Section</option>
+				</select>
+				<br>
+				<br>
+				<div class="row">
+					<div class="col-md-6">
+						<label for="currentClass"><b>Current Class attended at previous school</b></label><br>
+						<input type="text" id="currentClass" name="currentClass" class="form-control">
+					</div>
+					<div class="col-md-6">
+						<label for="previousSchool"><b>Name of Previous School(s) attended</b></label><br>
+						<textarea id="previousSchool" name="previousSchool" rows="2" cols="15" class="form-control"></textarea>
+					</div>
+				</div>
+				<br>
+				<label for="academicChallenge"><b>Academic Challenge (if any)</b></label><br>
+				<input type="radio" id="academicChallengeYes" name="academicChallenge" value="Yes">
+				<label for="academicChallengeYes">Yes</label>
+				<input type="radio" id="academicChallengeNo" name="academicChallenge" value="No">
+				<label for="academicChallengeNo">No</label>
+				<br>
+				<br>
+				 <button type="button" onclick="window.location.href='Candidatepage.html'" class="btn btn-primary">Previous</button>
+  <button type="submit" class="btn btn-primary">Next</button>
+
+				</div>
+		</div>
+	</form>
+
+	<div class="footer">
+		<footer>
+			<p>&copy; 2023 AFIIC. Powered by IPPLUS Nigeria Limited</p>
+			<p>Contact us: <a href="mailto:afiic.info.ng">Email Us</a></p>
+		</footer>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
